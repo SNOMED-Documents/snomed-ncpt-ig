@@ -1,22 +1,17 @@
 # Previous Versions
 
-  
+\| [File](display/DOCncptcig/Previous+Versions) | [Modified](display/DOCncptcig/Previous+Versions)\
+\---|---|---\
+\| [doc\_SNOMEDCTImplementationGuideForNCPT\_Current-en-US\_INT\_20241118.pdf ](download/attachments/259855643/doc_SNOMEDCTImplementationGuideForNCPT_Current-en-US_INT_20241118.pdf)| 2025-Apr-11 by [Anne Randorff Højen](display/~ahojen/)\
+\| Labels
 
-|  [File](/display/DOCncptcig/Previous+Versions?sortBy=name&sortOrder=ascending) |  [Modified](/display/DOCncptcig/Previous+Versions?sortBy=date&sortOrder=ascending)  
----|---|---  
-|  [ doc_SNOMEDCTImplementationGuideForNCPT_Current-en-US_INT_20241118.pdf ](/download/attachments/259855643/doc_SNOMEDCTImplementationGuideForNCPT_Current-en-US_INT_20241118.pdf?api=v2 "Download") |  2025-Apr-11 by [Anne Randorff Højen](    /display/~ahojen
-)  
-|  Labels
+* No labels
+*
 
-  * No labels 
-  * 
-Preview [$itemLabel]($itemRenderedUrl&isFromPageView=true) [$itemLabel]($itemRenderedUrl&isFromPageView=true)  
-  
+Preview [$itemLabel]($itemRenderedUrl\&isFromPageView=true/) [$itemLabel]($itemRenderedUrl\&isFromPageView=true/)
+
 * Drag and drop to upload or browse for files
 
-<figure><img src="images/wait.gif" alt="" title=""><figcaption><p>Upload file</p></figcaption></figure>
+<figure><img src="images/wait.gif" alt=""><figcaption><p>Upload file</p></figcaption></figure>
 
 File description
-
-  
-
