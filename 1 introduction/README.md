@@ -1,6 +1,4 @@
-# 1. introduction
-
-## 1. Introduction
+# Introduction
 
 ## Background
 
