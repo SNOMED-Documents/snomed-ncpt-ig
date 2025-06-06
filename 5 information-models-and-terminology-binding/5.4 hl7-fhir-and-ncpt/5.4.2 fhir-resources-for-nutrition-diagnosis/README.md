@@ -10,21 +10,12 @@ The FHIR **Condition** resource is primarily used to represent nutrition diagnos
 * **Etiology** : Captured in the details or extensions of the Condition resource.
 * **Signs/Symptoms** : Documented as evidence within the Condition resource, referencing relevant Observation resources.
 
-| Types of data collected | Purpose | Example | FHIR Resource |
-| ----------------------- | ------- | ------- | ------------- |
-| Diagnosis               |         |         |               |
-
-* Problem
-
-\| Represents the primary nutrition-related problem using a condition code| Malnutrition| **Condition**
-
-* Etiology
-
-\| Details the cause or contributing factors for the diagnosis| Physical Function, Social-personal| **Condition**
-
-* Signs/symptoms
-
-\| Documents observable signs or symptoms that support the diagnosis
+| Types of data collected | Purpose                                                                                                          | Example | FHIR Resource |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------- | ------- | ------------- |
+| Diagnosis               |                                                                                                                  |         |               |
+| Problem                 |  Represents the primary nutrition-related problem using a condition code\| Malnutrition\| **Condition**          |         |               |
+| Etiology                | Details the cause or contributing factors for the diagnosis\| Physical Function, Social-personal\| **Condition** |         |               |
+| Signs/symptoms          | Documents observable signs or symptoms that support the diagnosis                                                |         |               |
 
 _Documented as evidence within the Condition resource, referencing relevant Observation resources._| Unintended weight loss, muscle wasting| **Observation\*\*\*\*Condition**
 
