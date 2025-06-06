@@ -1,6 +1,6 @@
 # 3. clinical-use-cases
 
-## 3. Clinical Use Cases
+
 
 Effective nutrition care relies on the ability to share, receive, reuse, and interpret structured nutrition data seamlessly across healthcare settings. Structured nutrition data play a crucial role in supporting comprehensive care transitions, ensuring continuity and consistency in nutrition interventions as patients move through different levels of care.
 
@@ -12,9 +12,8 @@ Standardizing the documentation of nutrition care using SNOMED CT allows for con
 
 ### Example 1.1 - Nutrition **Assessment**
 
-A patient with \*\*newly diagnosed diabetes mellitus type 2 \*\*is referred to a dietitian for nutrition care. The patient has not seen a dietitian before.
-
-During the initial assessment, the dietitian records the patient's dietary habits, anthropometric measurements, biochemical data (e.g. blood glucose concentration), and relevant medical and social history using standardized SNOMED CT concepts within the EHR. This structured documentation allows for seamless sharing of the patient's nutrition assessment data with other healthcare providers involved in their care, such as endocrinologists, primary care physicians, and nurses.
+> A patient with \*\*newly diagnosed diabetes mellitus type 2 \*\*is referred to a dietitian for nutrition care. The patient has not seen a dietitian before.\
+> During the initial assessment, the dietitian records the patient's dietary habits, anthropometric measurements, biochemical data (e.g. blood glucose concentration), and relevant medical and social history using standardized SNOMED CT concepts within the EHR. This structured documentation allows for seamless sharing of the patient's nutrition assessment data with other healthcare providers involved in their care, such as endocrinologists, primary care physicians, and nurses.
 
 **Examples**
 
@@ -34,7 +33,9 @@ During the initial assessment, the dietitian records the patient's dietary habit
 
 \*\*Health Related Quality of Life (HRQOL) scale is: excellent, very good, good, fair, or poor
 
+{% hint style="info" %}
 Best practice tip: There is discussion in many countries like Sweden about minimizing double documentation. In the EHR, any professional can read information other professionals have documented. Thus, it should not be necessary for dietitians to re-document values like blood glucose concentration. The dietitians could refer to the related section in the EHR.
+{% endhint %}
 
 #### Benefits for Clinicians:
 
@@ -49,7 +50,7 @@ Best practice tip: There is discussion in many countries like Sweden about minim
 
 ### Example 1.2 - Evidence-Based Nutrition **Diagnosis**
 
-By leveraging SNOMED CT concepts for nutrition diagnosis within the **SNOMED CT NCPT reference set (current release April 2025)** , healthcare professionals can accurately identify and categorize patients' nutrition problems. This standardized approach enhances the ability to apply evidence-based interventions and track outcomes effectively.
+> By leveraging SNOMED CT concepts for nutrition diagnosis within the **SNOMED CT NCPT reference set (current release April 2025)** , healthcare professionals can accurately identify and categorize patients' nutrition problems. This standardized approach enhances the ability to apply evidence-based interventions and track outcomes effectively.
 
 **Example of a complete diagnostic statement in PES format (P: problem, E: etiology, S: signs and symptoms)**
 
@@ -75,9 +76,11 @@ By applying standardized terminology, the healthcare team can accurately identif
 
 ### Example 1.3 - Tailored Nutrition **Intervention**
 
-Utilizing SNOMED CT for documenting nutrition interventions enables healthcare providers to select and implement appropriate dietary recommendations and therapies based on standardized terminology. This supports personalized care planning and ensures consistency in treatment strategies across different care settings.
+> Utilizing SNOMED CT for documenting nutrition interventions enables healthcare providers to select and implement appropriate dietary recommendations and therapies based on standardized terminology. This supports personalized care planning and ensures consistency in treatment strategies across different care settings.
+>
+> The dietitian provides an intervention that supports carbohydrate control and portion sizes. The use of SNOMED CT ensures consistency in documenting dietary recommendations and facilitates communication between the dietitian, nurse, endocrinologist, and other members of the healthcare team involved in the patient's care.
 
-The dietitian provides an intervention that supports carbohydrate control and portion sizes. The use of SNOMED CT ensures consistency in documenting dietary recommendations and facilitates communication between the dietitian, nurse, endocrinologist, and other members of the healthcare team involved in the patient's care.
+
 
 **Examples**
 
@@ -97,7 +100,7 @@ The dietitian provides an intervention that supports carbohydrate control and po
 
 ### Example 1.4 - Continuous Nutrition **Monitoring and Evaluation**
 
-Standardized documentation of nutrition monitoring and evaluation data using SNOMED CT facilitates ongoing assessment of patients' nutritional status and progress over time. This enables healthcare professionals to identify trends, adjust interventions as needed, and evaluate the effectiveness of nutrition care plans in achieving desired outcomes.
+> Standardized documentation of nutrition monitoring and evaluation data using SNOMED CT facilitates ongoing assessment of patients' nutritional status and progress over time. This enables healthcare professionals to identify trends, adjust interventions as needed, and evaluate the effectiveness of nutrition care plans in achieving desired outcomes.
 
 **Examples**
 
@@ -123,7 +126,7 @@ Transitional care models are practice systems that “follow patients across set
 
 ### Example 2.1 - Exchanging Nutrition Data
 
-A standardized digital referral using SNOMED CT codes and a FHIR API is able to transfer nutrition related data of patients with malnutrition between dietitians (from hospital to a community-based meal provision organization) and this communication of care improves health outcomes post discharge.
+> A standardized digital referral using SNOMED CT codes and a FHIR API is able to transfer nutrition related data of patients with malnutrition between dietitians (from hospital to a community-based meal provision organization) and this communication of care improves health outcomes post discharge.
 
 #### Benefits for Clinicians:
 
@@ -142,7 +145,7 @@ By implementing SNOMED CT for nutrition care documentation, EHR systems can supp
 
 ### Example 3.1 - EHR-Integrated Tool for Personalized Care and Research Insights
 
-A healthcare system implements a clinical decision support tool embedded within its EHR system to assist providers in managing patients with chronic kidney disease. The tool utilizes SNOMED CT-coded nutrition data to generate tailored recommendations for dietary modifications, fluid restriction, and electrolyte management based on the patient's stage of disease and comorbid conditions. Additionally, aggregated SNOMED CT-coded nutrition data from EHRs across the healthcare system are utilized for research purposes to analyze trends in nutrition-related outcomes among patients with chronic kidney disease and evaluate the impact of various interventions on disease progression and quality of life.
+> A healthcare system implements a clinical decision support tool embedded within its EHR system to assist providers in managing patients with chronic kidney disease. The tool utilizes SNOMED CT-coded nutrition data to generate tailored recommendations for dietary modifications, fluid restriction, and electrolyte management based on the patient's stage of disease and comorbid conditions. Additionally, aggregated SNOMED CT-coded nutrition data from EHRs across the healthcare system are utilized for research purposes to analyze trends in nutrition-related outcomes among patients with chronic kidney disease and evaluate the impact of various interventions on disease progression and quality of life.
 
 #### Benefits for Clinicians:
 
@@ -156,8 +159,7 @@ A healthcare system implements a clinical decision support tool embedded within 
 
 **Users who would like to submit new use cases they have developed may do so at any time, and will be considered for inclusion. Please submit content, comments, and questions at:** [**info@snomed.org**](mailto:info@snomed.org)
 
-\*\*\
-\*\*
+***
 
 **REFERENCES**
 
