@@ -1,14 +1,14 @@
 # Previous Versions
 
-\| [File](display/DOCncptcig/Previous+Versions) | [Modified](display/DOCncptcig/Previous+Versions)\
+\| [File](https://github.com/IHTSDO/snomed-ncpt-ig/blob/main/display/DOCncptcig/Previous+Versions?sortBy=name\&sortOrder=ascending/README.md) | [Modified](https://github.com/IHTSDO/snomed-ncpt-ig/blob/main/display/DOCncptcig/Previous+Versions?sortBy=date\&sortOrder=ascending/README.md)\
 \---|---|---\
-\| [doc\_SNOMEDCTImplementationGuideForNCPT\_Current-en-US\_INT\_20241118.pdf ](download/attachments/259855643/doc_SNOMEDCTImplementationGuideForNCPT_Current-en-US_INT_20241118.pdf)| 2025-Apr-11 by [Anne Randorff Højen](display/~ahojen/)\
+\| [doc\_SNOMEDCTImplementationGuideForNCPT\_Current-en-US\_INT\_20241118.pdf ](https://github.com/IHTSDO/snomed-ncpt-ig/blob/main/download/attachments/259855643/doc_SNOMEDCTImplementationGuideForNCPT_Current-en-US_INT_20241118.pdf?api=v2)| 2025-Apr-11 by [Anne Randorff Højen](https://github.com/IHTSDO/snomed-ncpt-ig/blob/main/display/~ahojen/README.md)\
 \| Labels
 
 * No labels
 *
 
-Preview [$itemLabel]($itemRenderedUrl\&isFromPageView=true/) [$itemLabel]($itemRenderedUrl\&isFromPageView=true/)
+Preview [$itemLabel](https://github.com/IHTSDO/snomed-ncpt-ig/blob/main/$itemRenderedUrl\&isFromPageView=true/README.md) [$itemLabel](https://github.com/IHTSDO/snomed-ncpt-ig/blob/main/$itemRenderedUrl\&isFromPageView=true/README.md)
 
 * Drag and drop to upload or browse for files
 

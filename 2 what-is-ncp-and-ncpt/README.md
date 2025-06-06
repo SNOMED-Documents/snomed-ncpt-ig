@@ -2,11 +2,10 @@
 
 Effective nutrition and dietetics care delivery hinges on a structured approach that ensures consistency, quality, and personalized care. This chapter introduces the **Nutrition Care Process (NCP) Model** and its associated **Nutrition Care Process Terminology (NCPT)** , a pivotal framework and standardized language designed to help professionals deliver tailored nutrition and dietetics care. The NCP Model and NCPT have been developed and continually refined over years through global collaboration, led by the **Academy of Nutrition and Dietetics**(referred to as the Academy thereafter), with input from numerous dietetic associations around the world.
 
-Additionally, the chapter will introduce the **SNOMED CT****NCPT Reference Set (or refset)** , which further enhances the ability of healthcare professionals to standardize and integrate nutrition and dietetics care into broader clinical systems, supporting interoperability and comprehensive patient care across settings.
+Additionally, the chapter will introduce the **SNOMED CT\*\*\*\*NCPT Reference Set (or refset)** , which further enhances the ability of healthcare professionals to standardize and integrate nutrition and dietetics care into broader clinical systems, supporting interoperability and comprehensive patient care across settings.
 
 At present, the SNOMED CT NCPT Reference Set (release of April 2025) contains the "problems" or nutrition diagnoses. and "intervention" terms of the NCPT (edition 2020). The plan is to add next the nutrition assessment, monitoring and evaluation terms of NCPT (April 2026 as resources and capacity permit). It is important to emphasize that SNOMED CT is used by many countries where English is not the main language. The Nutrition and Dietetics CRG which has a wide international membership encourages the translation of the SNOMED CT NCPT refset and welcomes updates on translation efforts. Sweden already has a SNOMED CT NCPT refset release containing the diagnostic terms in the Swedish language since November 2024. For more on the translation process of refsets, please see section [6.2 Translating Reference Set Members](https://confluence.ihtsdotools.org/display/WIPnutsig/6.2+Translating+Reference+Set+Members?src=sidebar) of this guide.
 
-  * [2.1 Nutrition Care Process Model (NCPM)](259855703.html)
-  * [2.2 Nutrition Care Process Terminology (NCPT)](259855705.html)
-  * [2.3 SNOMED CT NCPT Reference Set](2.3-SNOMED-CT-NCPT-Reference-Set_259855700.html)
-
+* [2.1 Nutrition Care Process Model (NCPM)](https://github.com/IHTSDO/snomed-ncpt-ig/blob/main/2%20what-is-ncp-and-ncpt/259855703.html)
+* [2.2 Nutrition Care Process Terminology (NCPT)](https://github.com/IHTSDO/snomed-ncpt-ig/blob/main/2%20what-is-ncp-and-ncpt/259855705.html)
+* [2.3 SNOMED CT NCPT Reference Set](https://github.com/IHTSDO/snomed-ncpt-ig/blob/main/2%20what-is-ncp-and-ncpt/2.3-SNOMED-CT-NCPT-Reference-Set_259855700.html)

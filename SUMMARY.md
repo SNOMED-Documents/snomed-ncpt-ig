@@ -1,7 +1,6 @@
 # Table of contents
 
 * [SNOMED CT Implementation Guide for the Nutrition Care Process Terminology](README.md)
-* [Executive Summary](executive-summary.md)
 * [1. introduction](<1 introduction/README.md>)
 * [2. What is NCP and NCPT?](<2 what-is-ncp-and-ncpt/README.md>)
   * [2.1 Nutrition Care Process Model (NCPM)](<2 what-is-ncp-and-ncpt/2.1-nutrition-care-process-model-ncpm.md>)
