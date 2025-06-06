@@ -45,58 +45,62 @@ Using FHIR resources, healthcare providers document these findings to support a 
 
 This resource represents the diagnosis of the nutritional disorder (malnutrition).
 
-**Condition Resource Representing a Nutrition Diagnosis**\
-\[code]\
-{\
-"resourceType": "Condition",\
-"id": "nutritional-disorder",\
-"clinicalStatus": {\
-"coding": \[\
-{\
-"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",\
-"code": "active",\
-"display": "Active"\
-}\
-]\
-},\
-"verificationStatus": {\
-"coding": \[\
-{\
-"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",\
-"code": "confirmed",\
-"display": "Confirmed"\
-}\
-]\
-},\
-"code": {\
-"coding": \[\
-{\
-"system": "http://snomed.info/sct",\
-"code": "2492009",\
-"display": "Nutritional disorder (disorder)"\
-}\
-]\
-},\
-"subject": {\
-"reference": "Patient/example"\
-},\
-"evidence": \[\
-{\
-"detail": \[\
-{\
-"reference": "Condition/diabetes"\
-},\
-{\
-"reference": "Observation/weight-loss"\
-},\
-{\
-"reference": "Observation/muscle-atrophy"\
-}\
-]\
-}\
-]\
-}\
-\[/code]
+{% code overflow="wrap" %}
+```json
+Condition Resource Representing a Nutrition Diagnosis
+[code]
+{
+"resourceType": "Condition",
+"id": "nutritional-disorder",
+"clinicalStatus": {
+"coding": [
+{
+"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+"code": "active",
+"display": "Active"
+}
+]
+},
+"verificationStatus": {
+"coding": [
+{
+"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+"code": "confirmed",
+"display": "Confirmed"
+}
+]
+},
+"code": {
+"coding": [
+{
+"system": "http://snomed.info/sct",
+"code": "2492009",
+"display": "Nutritional disorder (disorder)"
+}
+]
+},
+"subject": {
+"reference": "Patient/example"
+},
+"evidence": [
+{
+"detail": [
+{
+"reference": "Condition/diabetes"
+},
+{
+"reference": "Observation/weight-loss"
+},
+{
+"reference": "Observation/muscle-atrophy"
+}
+]
+}
+]
+}
+[/code]
+```
+{% endcode %}
 
 ### **Etiology (Cause)** :
 
@@ -104,43 +108,45 @@ This resource represents the underlying chronic condition contributing to the nu
 
 #### **Underlying Chronic Illness, Diabetes Mellitus** :
 
-**Condition Resource for Underlying Chronic Illness**\
-\[code]\
-{\
-"resourceType": "Condition",\
-"id": "diabetes",\
-"clinicalStatus": {\
-"coding": \[\
-{\
-"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",\
-"code": "active",\
-"display": "Active"\
-}\
-]\
-},\
-"verificationStatus": {\
-"coding": \[\
-{\
-"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",\
-"code": "confirmed",\
-"display": "Confirmed"\
-}\
-]\
-},\
-"code": {\
-"coding": \[\
-{\
-"system": "http://snomed.info/sct",\
-"code": "44054006",\
-"display": "Diabetes mellitus type 2 (disorder)"\
-}\
-]\
-},\
-"subject": {\
-"reference": "Patient/example"\
-}\
-}\
-\[/code]
+```json
+Condition Resource for Underlying Chronic Illness
+[code]
+{
+"resourceType": "Condition",
+"id": "diabetes",
+"clinicalStatus": {
+"coding": [
+{
+"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+"code": "active",
+"display": "Active"
+}
+]
+},
+"verificationStatus": {
+"coding": [
+{
+"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+"code": "confirmed",
+"display": "Confirmed"
+}
+]
+},
+"code": {
+"coding": [
+{
+"system": "http://snomed.info/sct",
+"code": "44054006",
+"display": "Diabetes mellitus type 2 (disorder)"
+}
+]
+},
+"subject": {
+"reference": "Patient/example"
+}
+}
+[/code]
+```
 
 ### **Signs/Symptoms** :
 
@@ -150,73 +156,77 @@ This is referenced in the evidence section of the Condition resource, and refere
 
 This resource documents the presence of unintentional weight loss.
 
-**Observation Resource for associated Symptom: Edema**\
-\[code]\
-{\
-"resourceType": "Observation",\
-"id": "weight-loss",\
-"status": "final",\
-"category": \[\
-{\
-"coding": \[\
-{\
-"system": "http://terminology.hl7.org/CodeSystem/observation-category",\
-"code": "clinical",\
-"display": "Clinical"\
-}\
-]\
-}\
-],\
-"code": {\
-"coding": \[\
-{\
-"system": "http://snomed.info/sct",\
-"code": "448765001",\
-"display": "Unintentional weight loss (finding)"\
-}\
-]\
-},\
-"subject": {\
-"reference": "Patient/example"\
-},\
-"valueBoolean": true\
-}\
-\[/code]
+```json
+Observation Resource for associated Symptom: Edema
+[code]
+{
+"resourceType": "Observation",
+"id": "weight-loss",
+"status": "final",
+"category": [
+{
+"coding": [
+{
+"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+"code": "clinical",
+"display": "Clinical"
+}
+]
+}
+],
+"code": {
+"coding": [
+{
+"system": "http://snomed.info/sct",
+"code": "448765001",
+"display": "Unintentional weight loss (finding)"
+}
+]
+},
+"subject": {
+"reference": "Patient/example"
+},
+"valueBoolean": true
+}
+[/code]
+```
 
 #### **Muscle wasting** :
 
-**Observation Resource for associated Symptom: Muscle wasting**\
-\[code]\
-{\
-"resourceType": "Observation",\
-"id": "muscle-atrophy",\
-"status": "final",\
-"category": \[\
-{\
-"coding": \[\
-{\
-"system": "http://terminology.hl7.org/CodeSystem/observation-category",\
-"code": "clinical",\
-"display": "Clinical"\
-}\
-]\
-}\
-],\
-"code": {\
-"coding": \[\
-{\
-"system": "http://snomed.info/sct",\
-"code": "88092000",\
-"display": "Muscle atrophy (disorder)"\
-}\
-]\
-},\
-"subject": {\
-"reference": "Patient/example"\
-},\
-"valueBoolean": true\
-}\
-\[/code]
+```json
+Observation Resource for associated Symptom: Muscle wasting
+[code]
+{
+"resourceType": "Observation",
+"id": "muscle-atrophy",
+"status": "final",
+"category": [
+{
+"coding": [
+{
+"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+"code": "clinical",
+"display": "Clinical"
+}
+]
+}
+],
+"code": {
+"coding": [
+{
+"system": "http://snomed.info/sct",
+"code": "88092000",
+"display": "Muscle atrophy (disorder)"
+}
+]
+},
+"subject": {
+"reference": "Patient/example"
+},
+"valueBoolean": true
+}
+[/code]
+```
 
 **Linking the Resources**
 
