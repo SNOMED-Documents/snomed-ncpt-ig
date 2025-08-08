@@ -1,8 +1,4 @@
-# 6.5 using-the-ncpt-reference-set
-
-## 6.5 Using the NCPT Reference Set
-
-## Introduction
+# Using the NCPT Reference Set
 
 When working with the Nutrition Care Process Terminology (NCPT) reference set, it’s essential to have efficient access to the content through various systems, regardless of the technology used.
 
@@ -10,150 +6,170 @@ Clinical applications will access the Reference Set content from the selected te
 
 This page provides examples of how to interact with the reference set, whether you’re using a FHIR terminology server or a relational database like MySQL.
 
+***
+
 ## Accessing the Reference Set from a FHIR Terminology Server
 
 When working with the Nutrition Care Process Terminology (NCPT) reference set, leveraging a FHIR terminology server can simplify access and management.
 
-A FHIR terminology server provides mechanisms to work with the Reference Set as a Value Set; the main operations available are **$expand** and **$validate-code** :
+A FHIR terminology server provides mechanisms to work with the Reference Set as a Value Set. The main operations available are $expand and $validate-code.
 
-#### FHIR Operations
+### FHIR Operations
 
-| **Service Name and Status**                             | **Input** | **Output** |
-| ------------------------------------------------------- | --------- | ---------- |
-| \*\*$expand\*\*\*\*Get all members of the reference set |           |            |
+**$expand — Get all members of the reference set**
 
-***
+Required:
 
-\*\*|
+*   A reference set specified by its refsetId, for example:
 
-* A reference set specified by its refsetId, in this case the identifier for the [1303957004 |Nutrition Care Process Terminology reference set (foundation metadata concept)|](http://snomed.info/id/1303957004)
-
-|
-
+    1303957004 |Nutrition Care Process Terminology reference set (foundation metadata concept)|
 * A list of concept or description IDs
 * Option to include additional information about each concept or description
 
-\*\*$validate-code**Test if a concept or description is a member of a specified reference set**\
-\*\*|
+**$validate-code — Test if a concept or description is a member of the reference set**
+
+Required:
 
 * A reference set specified by its refsetId
-* A candidate [concept.id](http://concept.id)
+* A candidate concept.id
+* Returns TRUE if the candidate is a member, FALSE otherwise
 
-|
-
-* If the candidate concept is a member of the reference set: TRUE
-* Otherwise: FALSE
+***
 
 #### Example FHIR Requests
 
-These examples use the concept [1303957004 |Nutrition Care Process Terminology reference set (foundation metadata concept)|](http://snomed.info/id/1303957004) as the refsetId.
+_These examples use the concept 1303957004 |Nutrition Care Process Terminology reference set (foundation metadata concept)| as the refsetId._
 
-| **Service Name**                         | \*\*API Call \*\* | **Result** |
-| ---------------------------------------- | ----------------- | ---------- |
-| **Get all members of the reference set** |                   |            |
-| \[code]                                  |                   |            |
+**Get all members of the reference set**
 
+**API Call:**
+
+{% code overflow="wrap" %}
 ```
-GET [fhir]/ValueSet/$expand
-?url=http://snomed.info/sct?fhir_vs=refset/[refsetId]
-&count=10
+GET [fhir]/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=refset/[refsetId]&count=10
+```
+{% endcode %}
+
+Example:
+
+{% code overflow="wrap" %}
+```
+GET [fhir]/ValueSet/$expand?url=http%3A%2F%2Fsnomed.info%2Fsct%3Ffhir_vs%3Drefset%2F1303957004&count=10
+```
+{% endcode %}
+
+Alternative using Expression Constraint Language (ECL):
+
+<pre data-overflow="wrap"><code><strong>GET [fhir]/ValueSet/$expand?url=http%3A%2F%2Fsnomed.info%2Fsct%3Ffhir_vs%3Decl%2F%5E%5B1303957004%5D&#x26;count=10
+</strong></code></pre>
+
+or:
+
+{% code overflow="wrap" %}
+```
+GET [fhir]/ValueSet/$expand?url=http%3A%2F%2Fsnomed.info%2Fsct%3Ffhir_vs%3Decl%2F%5E1303957004&count=10
+```
+{% endcode %}
+
+**Result:**
+
+Returns a JSON representation of the reference set members.
+
+Each concept includes:
+
+* code: the conceptId of the reference set member
+* display: the preferred term for the reference set member
+
+Also returns:
+
+* total: the total number of reference set members
+
+Paging Parameters:
+
+* count: limits the number of members returned
+* offset: specifies the start position in the results (in multiples of the limit)
+
+***
+
+**Test if a concept is a member of the reference set**
+
+**API Call:**
+
+{% code overflow="wrap" %}
+```url
+GET [fhir]/ValueSet/$validate-code?system=http://snomed.info/sct&code=181216001&url=http://snomed.info/sct/[moduleId]/version/[effectiveTime]?fhir_vs=refset/[refsetId]
+```
+{% endcode %}
+
+Example:
+
+{% code overflow="wrap" %}
+```
+GET [fhir]/ValueSet/$validate-code?system=http://snomed.info/sct&code=181216001&url=http://snomed.info/sct/900000000000207008/version/20200131?fhir_vs=refset/723264001
+```
+{% endcode %}
+
+**Result:**
+
+Returns a JSON object with a FHIR Parameters resource, including:
+
+* result: a boolean value (true or false) indicating whether the concept is a member of the reference set
+
+***
+
+## Accessing the Reference Set in a Relational Database
+
+If the Reference Set has been loaded into a relational database using a model that complies with the RF2 specification for tables and column names, the reference set content can be accessed using SQL queries.
+
+***
+
+### SQL Query Examples
+
+#### Get all members of the reference set
+
+SQL Query:
+
+```sql
+SELECT referencedComponentId FROM snap_refset_simple
+    WHERE active=1 AND refsetId=[refsetId];
 ```
 
-\[/code]
+Example:
 
-for example\
-\[code]\
-GET \[fhir]/ValueSet/$expand\
-?url=http%3A%2F%2Fsnomed.info%2Fsct%3Ffhir\_vs%3Drefset%2F1303957004\&count=10\
-\[/code]\
-\[code]
-
-\[/code]
-
-An alternative solution is to use the expression constraint language, as shown here:\
-\[code]\
-GET \[fhir]/ValueSet/$expand\
-?url=http%3A%2F%2Fsnomed.info%2Fsct%3Ffhir\_vs%3Decl%2F%5E%5B1303957004%5D\
-\&count=10\
-\[/code]\
-\[code]\
-GET \[fhir]/ValueSet/$expand\
-?url=http%3A%2F%2Fsnomed.info%2Fsct%3Ffhir\_vs%3Decl%2F%5E1303957004\
-\&count=10\
-\[/code]
-
-\| Returns a JSON representation of data about each of the reference set member.The data returned for each concept includes:
-
-* \*\*code: \*\*the conceptId of the reference set member
-* **display:** the preferred term for the reference set member
-
-Also returns the **total** number of reference set membersAs some reference sets have very large numbers of children, this service is paged. Requests parameters include:
-
-* **count** to restrict the number of members returned.
-* \*\*offset \*\*to specify the start in the results (in multiples of the limit).
-
-**Test if a concept is a member of the reference set**|\
-\[code]\
-GET \[fhir]/ValueSet/$validate-code\
-?system=http://snomed.info/sct\&code=181216001\
-\&url=http://snomed.info/sct/\[moduleId]/version/\[effectiveTime]?fhir\_vs=refset/\[refsetId]\
-\[/code]\
-\[code]\
-for example\
-\[/code]\
-\[code]\
-GET \[fhir]/ValueSet/$validate-code\
-?system=http://snomed.info/sct\&code=181216001\
-\&url=http://snomed.info/sct/900000000000207008/version/20200131?fhir\_vs=refset/723264001\
-\[/code]\
-\[code]
-
-\[/code]
-
-\| Returns a JSON object with a "Parameters" resource, including a "result" parameter with a boolean value (true/false) indicating whether the member validated OK or not against the reference set.
-
-### Accessing the Reference Set in a Relational Database
-
-If the Reference Set has been loaded in a relational database using a model that complies with the RF2 specification for tables and column names, the reference set content can be accessed using SQL queries in line with the examples below:
-
-| **Service Name**                         | \*\*SQL Query [6](https://confluence.ihtsdotools.org/display/WIPTSG/4.6+Get+and+Test+Reference+Set+Membership#footnotes) \*\* | **Result** |
-| ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| **Get all members of the reference set** |                                                                                                                               |            |
-| \[code]                                  |                                                                                                                               |            |
-
-```
-SELECT referencedComponentId FROM snap_refset_simple
-    WHERE active=1 AND refsetId=[refsetId];
+```sql
+SELECT referencedComponentId FROM snap_refset_simple
+    WHERE active=1 AND refsetId=1303957004;
 ```
 
-\[/code]
+Result:
 
-for example\
-\[code]\
-SELECT referencedComponentId FROM snap\_refset\_simple\
-&#x20;   WHERE active=1 AND refsetId=1303957004;\
-\[/code]
+Returns the IDs of all the concepts or descriptions that are members of the reference set.
 
-\| Returns the ids of all the concepts or descriptions that are the members of the reference set.
+***
 
-**Test if a concept is a member of the reference set**|\
-\[code]\
-SELECT count(referencedComponentId)\
-&#x20;   FROM snap\_refset\_simple\
-&#x20;   WHERE active=1 AND refsetId=\[refsetId]\
-&#x20;    AND referencedComponentId=\[candidateComponentId];\
-\[/code]
+#### Test if a concept is a member of the reference set
 
-for example\
-\[code]\
-SELECT count(referencedComponentId)\
-&#x20;   FROM snap\_refset\_simple\
-&#x20;   WHERE active=1 AND refsetId=1303957004    \
-AND referencedComponentId=53120007;\
-\[/code]
+SQL Query:
 
-\| Returns:
+```sql
+SELECT count(referencedComponentId)
+    FROM snap_refset_simple
+    WHERE active=1 AND refsetId=[refsetId]
+      AND referencedComponentId=[candidateComponentId];
+```
 
-* 0 : if the candidate component is not in the reference set.
-* 1 : If the candidate component is a member of the reference set
-  * Some types or reference set can include the same component more than once, so any value greater than zero indicate the component is a member of the references set.
+Example:
+
+```sql
+SELECT count(referencedComponentId)
+    FROM snap_refset_simple
+    WHERE active=1 AND refsetId=1303957004    
+      AND referencedComponentId=53120007;
+```
+
+Result:
+
+* 0: if the candidate component is not in the reference set
+* 1: if the candidate component is a member of the reference set
+
+Some reference sets may include the same component more than once. Any value greater than zero indicates that the component is a member of the reference set.

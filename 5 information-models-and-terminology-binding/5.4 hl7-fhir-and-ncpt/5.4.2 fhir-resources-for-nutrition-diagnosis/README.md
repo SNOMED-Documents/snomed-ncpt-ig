@@ -10,20 +10,18 @@ The FHIR **Condition** resource is primarily used to represent nutrition diagnos
 * **Etiology** : Captured in the details or extensions of the Condition resource.
 * **Signs/Symptoms** : Documented as evidence within the Condition resource, referencing relevant Observation resources.
 
-| Types of data collected | Purpose                                                                                                          | Example | FHIR Resource |
-| ----------------------- | ---------------------------------------------------------------------------------------------------------------- | ------- | ------------- |
-| Diagnosis               |                                                                                                                  |         |               |
-| Problem                 |  Represents the primary nutrition-related problem using a condition code\| Malnutrition\| **Condition**          |         |               |
-| Etiology                | Details the cause or contributing factors for the diagnosis\| Physical Function, Social-personal\| **Condition** |         |               |
-| Signs/symptoms          | Documents observable signs or symptoms that support the diagnosis                                                |         |               |
-
-_Documented as evidence within the Condition resource, referencing relevant Observation resources._| Unintended weight loss, muscle wasting| **Observation\*\*\*\*Condition**
+| Types of data collected | Purpose                                                                                                                                                                                           | Example                                | FHIR Resource                                                        |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------- |
+| **Diagnosis**           |                                                                                                                                                                                                   |                                        |                                                                      |
+| _**Problem**_           | Represents the primary nutrition-related problem using a condition code                                                                                                                           | Malnutrition                           | **Condition**                                                        |
+| _**Etiology**_          | Details the cause or contributing factors for the diagnosis                                                                                                                                       | Physical Function, Social-personal     | **Condition**                                                        |
+| _**Signs/symptoms**_    | <p>Documents observable signs or symptoms that support the diagnosis<br><br></p><p><em>Documented as evidence within the Condition resource, referencing relevant Observation resources.</em></p> | Unintended weight loss, muscle wasting | <p><strong>Observation</strong></p><p><strong>Condition</strong></p> |
 
 ## Example: Nutrition Diagnosis with Etiology
 
 **Clinical scenario**
 
-This scenario involves a 55-year-old patient with a history of Type 2 diabetes mellitus, managed with medications and lifestyle adjustments. Recent symptoms include unintended weight loss, weakness, and swelling in the lower limbs. Clinical evaluation reveals signs of weight loss and muscle wasting, indicating possible malnutrition exacerbated by chronic diabetes management.
+> This scenario involves a 55-year-old patient with a history of Type 2 diabetes mellitus, managed with medications and lifestyle adjustments. Recent symptoms include unintended weight loss, weakness, and swelling in the lower limbs. Clinical evaluation reveals signs of weight loss and muscle wasting, indicating possible malnutrition exacerbated by chronic diabetes management.
 
 Using FHIR resources, healthcare providers document these findings to support a structured approach to diagnosis and treatment planning.
 
@@ -36,110 +34,108 @@ Using FHIR resources, healthcare providers document these findings to support a 
 
 This resource represents the diagnosis of the nutritional disorder (malnutrition).
 
-{% code overflow="wrap" %}
 ```json
-Condition Resource Representing a Nutrition Diagnosis
-[code]
 {
-"resourceType": "Condition",
-"id": "nutritional-disorder",
-"clinicalStatus": {
-"coding": [
-{
-"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-"code": "active",
-"display": "Active"
+  "resourceType": "Condition",
+  "id": "nutritional-disorder",
+  "clinicalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "code": "active",
+        "display": "Active"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "code": "confirmed",
+        "display": "Confirmed"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "2492009",
+        "display": "Nutritional disorder (disorder)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "evidence": [
+    {
+      "detail": [
+        {
+          "reference": "Condition/diabetes"
+        },
+        {
+          "reference": "Observation/weight-loss"
+        },
+        {
+          "reference": "Observation/muscle-atrophy"
+        }
+      ]
+    }
+  ]
 }
-]
-},
-"verificationStatus": {
-"coding": [
-{
-"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-"code": "confirmed",
-"display": "Confirmed"
-}
-]
-},
-"code": {
-"coding": [
-{
-"system": "http://snomed.info/sct",
-"code": "2492009",
-"display": "Nutritional disorder (disorder)"
-}
-]
-},
-"subject": {
-"reference": "Patient/example"
-},
-"evidence": [
-{
-"detail": [
-{
-"reference": "Condition/diabetes"
-},
-{
-"reference": "Observation/weight-loss"
-},
-{
-"reference": "Observation/muscle-atrophy"
-}
-]
-}
-]
-}
-[/code]
 ```
-{% endcode %}
 
-### **Etiology (Cause)** :
+### **Etiology (Cause)**&#x20;
 
 This resource represents the underlying chronic condition contributing to the nutritional disorder.
 
 #### **Underlying Chronic Illness, Diabetes Mellitus** :
 
+#### Condition Resource for Underlying Chronic Illness
+
+Here is a JSON representation of a condition resource detailing a chronic illness, Diabetes mellitus type 2:
+
 ```json
-Condition Resource for Underlying Chronic Illness
-[code]
 {
-"resourceType": "Condition",
-"id": "diabetes",
-"clinicalStatus": {
-"coding": [
-{
-"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-"code": "active",
-"display": "Active"
+  "resourceType": "Condition",
+  "id": "diabetes",
+  "clinicalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "code": "active",
+        "display": "Active"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "code": "confirmed",
+        "display": "Confirmed"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "44054006",
+        "display": "Diabetes mellitus type 2 (disorder)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/example"
+  }
 }
-]
-},
-"verificationStatus": {
-"coding": [
-{
-"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-"code": "confirmed",
-"display": "Confirmed"
-}
-]
-},
-"code": {
-"coding": [
-{
-"system": "http://snomed.info/sct",
-"code": "44054006",
-"display": "Diabetes mellitus type 2 (disorder)"
-}
-]
-},
-"subject": {
-"reference": "Patient/example"
-}
-}
-[/code]
 ```
 
-### **Signs/Symptoms** :
+This resource uses standard coding systems to describe the clinical and verification statuses, as well as the specific type of diabetes being documented.
+
+### **Signs/Symptoms** : **Unintentional Weight Loss**
 
 This is referenced in the evidence section of the Condition resource, and referencing a condition or observation resource.
 
@@ -147,77 +143,89 @@ This is referenced in the evidence section of the Condition resource, and refere
 
 This resource documents the presence of unintentional weight loss.
 
-```json
-Observation Resource for associated Symptom: Edema
-[code]
-{
-"resourceType": "Observation",
-"id": "weight-loss",
-"status": "final",
-"category": [
-{
-"coding": [
-{
-"system": "http://terminology.hl7.org/CodeSystem/observation-category",
-"code": "clinical",
-"display": "Clinical"
-}
-]
-}
-],
-"code": {
-"coding": [
-{
-"system": "http://snomed.info/sct",
-"code": "448765001",
-"display": "Unintentional weight loss (finding)"
-}
-]
-},
-"subject": {
-"reference": "Patient/example"
-},
-"valueBoolean": true
-}
-[/code]
-```
-
-#### **Muscle wasting** :
+#### Observation Resource: Symptom - Weight Loss
 
 ```json
-Observation Resource for associated Symptom: Muscle wasting
-[code]
 {
-"resourceType": "Observation",
-"id": "muscle-atrophy",
-"status": "final",
-"category": [
-{
-"coding": [
-{
-"system": "http://terminology.hl7.org/CodeSystem/observation-category",
-"code": "clinical",
-"display": "Clinical"
+  "resourceType": "Observation",
+  "id": "unintentional-weight-loss",
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "clinical",
+          "display": "Clinical"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "448765001",
+        "display": "Unintentional weight loss (finding)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "valueBoolean": true
 }
-]
-}
-],
-"code": {
-"coding": [
-{
-"system": "http://snomed.info/sct",
-"code": "88092000",
-"display": "Muscle atrophy (disorder)"
-}
-]
-},
-"subject": {
-"reference": "Patient/example"
-},
-"valueBoolean": true
-}
-[/code]
 ```
+
+**Details:**
+
+* **Resource Type**: Observation
+* **ID**: unintentional-weight-loss
+* **Status**: Final
+* **Category**: Clinical
+* **Code**: 448765001 - Unintentional weight loss (finding)
+* **Subject Reference**: Patient/example
+* **Symptom Presence**: True
+
+### **Signs/Symptoms: Muscle wasting**&#x20;
+
+#### Observation Resource: Muscle Wasting
+
+The following JSON represents an HL7 FHIR Observation for the symptom "Muscle Wasting":
+
+```json
+{
+  "resourceType": "Observation",
+  "id": "muscle-atrophy",
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "clinical",
+          "display": "Clinical"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "88092000",
+        "display": "Muscle atrophy (disorder)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "valueBoolean": true
+}
+```
+
+This resource indicates a clinical observation related to the presence of muscle atrophy (disorder) for a patient. The `valueBoolean` attribute confirms the observation is true.
 
 **Linking the Resources**
 

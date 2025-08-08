@@ -1,12 +1,10 @@
 # Appendix A: How to Learn More
 
-  
-
-What| Why| Where  
----|---|---  
-SNOMED CT Introductory Videos| Why structured clinical data matters| [Video](https://youtu.be/xOTs13ChZxs?si=mQmFphbKenSVvFJZ)  
-Introduction to using the SNOMED CT Browser (including details about design features and the SNOMED CT concept diagrams)| [Video](https://youtu.be/1lzVzVREHiY?si=TRFDpHWbN1YmR0mh)  
-eLearning Courses| To learn about SNOMED CT, its design and applications| [snomed.org/courses](http://snomed.org/courses)  
-Diagramming Guideline| To learn how to read the SNOMED CT concept diagrams| [snomed.org/diagram](http://snomed.org/diagram)  
-Clinical Engagement| To learn about SNOMED International's clinical engagement and related resources| [snomed.org/clinical](https://confluence.ihtsdotools.org/display/CP/Clinical+Engagement)  
-Nutrition and Dietetics Clinical Reference Group| To learn about SNOMED International’s clinical reference group for Nutrition and Dietetics| [Nutrition and Dietetics Clinical Reference Group](https://confluence.ihtsdotools.org/display/NDCRG/Nutrition+and+Dietetics+Clinical+Reference+Group)
+| What                                             | Why                                                                                                                       | Where                                                                                                                                                 |
+| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| SNOMED CT Introductory Videos                    | Why structured clinical data matters                                                                                      | [Video](https://youtu.be/xOTs13ChZxs?si=mQmFphbKenSVvFJZ)                                                                                             |
+|                                                  | \|ntroduction to using the SNOMED CT Browser (including details about design features and the SNOMED CT concept diagrams) | [Video](https://youtu.be/1lzVzVREHiY?si=TRFDpHWbN1YmR0mh)                                                                                             |
+| eLearning Courses                                | To learn about SNOMED CT, its design and applications                                                                     | [snomed.org/courses](http://snomed.org/courses)                                                                                                       |
+| Diagramming Guideline                            | To learn how to read the SNOMED CT concept diagrams                                                                       | [snomed.org/diagram](http://snomed.org/diagram)                                                                                                       |
+| Clinical Engagement                              | To learn about SNOMED International's clinical engagement and related resources                                           | [snomed.org/clinical](https://confluence.ihtsdotools.org/display/CP/Clinical+Engagement)                                                              |
+| Nutrition and Dietetics Clinical Reference Group | To learn about SNOMED International’s clinical reference group for Nutrition and Dietetics                                | [Nutrition and Dietetics Clinical Reference Group](https://confluence.ihtsdotools.org/display/NDCRG/Nutrition+and+Dietetics+Clinical+Reference+Group) |

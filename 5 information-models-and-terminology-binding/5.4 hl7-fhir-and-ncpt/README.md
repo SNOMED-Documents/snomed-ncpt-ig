@@ -1,4 +1,4 @@
-# 5.4 HL7 FHIR and NCPT
+# HL7 FHIR and NCPT
 
 ## Resources and Terminology Bindings
 
@@ -21,11 +21,11 @@ By adhering to these value sets, FHIR enables precise data exchange and a shared
 
 The following pages will provide detailed recommendations for terminology bindings between relevant FHIR resources and SNOMED CT value sets, specifically as they apply to representing the Nutrition Care Process Terminology (NCPT). Each section will outline the application of specific FHIR resources and bindings to support different NCPT components.
 
-* [5.4.1 FHIR Resources for Nutrition Assessment and Reassessment](https://github.com/IHTSDO/snomed-ncpt-ig/blob/main/5%20information-models-and-terminology-binding/5.4%20hl7-fhir-and-ncpt/5.4.1-FHIR-Resources-for-Nutrition-Assessment-and-Reassessment_259855728.html)
-* [5.4.2 FHIR Resources for Nutrition Diagnosis](https://github.com/IHTSDO/snomed-ncpt-ig/blob/main/5%20information-models-and-terminology-binding/5.4%20hl7-fhir-and-ncpt/5.4.2-FHIR-Resources-for-Nutrition-Diagnosis_259855730.html)
-  * [5.4.2.1 Terminology Bindings for Nutrition Diagnosis](https://github.com/IHTSDO/snomed-ncpt-ig/blob/main/5%20information-models-and-terminology-binding/5.4%20hl7-fhir-and-ncpt/5.4.2.1-Terminology-Bindings-for-Nutrition-Diagnosis_259855732.html)
-* [5.4.3 FHIR Resources for Nutrition Intervention](https://github.com/IHTSDO/snomed-ncpt-ig/blob/main/5%20information-models-and-terminology-binding/5.4%20hl7-fhir-and-ncpt/5.4.3-FHIR-Resources-for-Nutrition-Intervention_259855733.html)
-* [5.4.4 FHIR Resources for Nutrition Monitoring and Evaluation](https://github.com/IHTSDO/snomed-ncpt-ig/blob/main/5%20information-models-and-terminology-binding/5.4%20hl7-fhir-and-ncpt/5.4.4-FHIR-Resources-for-Nutrition-Monitoring-and-Evaluation_259855735.html)
+* [FHIR Resources for Nutrition Assessment and Reassessment](5.4.1-fhir-resources-for-nutrition-assessment-and-reassessment.md)
+* [FHIR Resources for Nutrition Diagnosis](<5.4.2 fhir-resources-for-nutrition-diagnosis/>)
+  * [Terminology Bindings for Nutrition Diagnosis](<5.4.2 fhir-resources-for-nutrition-diagnosis/5.4.2.1-terminology-bindings-for-nutrition-diagnosis.md>)
+* [FHIR Resources for Nutrition Intervention](5.4.3-fhir-resources-for-nutrition-intervention.md)
+* [FHIR Resources for Nutrition Monitoring and Evaluation](5.4.4-fhir-resources-for-nutrition-monitoring-and-evaluation.md)
 
 ## What is FHIR?
 
