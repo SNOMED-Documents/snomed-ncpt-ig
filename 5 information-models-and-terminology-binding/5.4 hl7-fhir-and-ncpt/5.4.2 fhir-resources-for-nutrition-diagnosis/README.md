@@ -233,3 +233,10 @@ This resource indicates a clinical observation related to the presence of muscle
 * The **Condition Resource for Type 2 Diabetes Mellitus** in its evidence.detail array to represent the etiology.
 * The **Observation Resources** for unintentional weight loss and muscle atrophy to represent signs/symptoms.
 * All resources reference the same patient (Patient/example) for proper linkage and context.
+
+
+
+
+
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScTmbZIf0UEQwYDkY27EEWBkaiYkHSbR0_9DmFrMLXoQLyL7Q/viewform?usp=pp_url&entry.1767247133=NCPT IG&entry.670899847=FHIR%20Resources%20for%20Nutrition%20Diagnosis" class="button primary">Provide Feedback</a>

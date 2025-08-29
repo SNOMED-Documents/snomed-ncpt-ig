@@ -40,3 +40,10 @@ HL7 FHIR is a modern standard designed to facilitate the exchange of healthcare 
 HL7 FHIR plays a crucial role in linking healthcare data with standard terminologies, including SNOMED CT. By integrating FHIR with terminologies like SNOMED CT, a more precise and standardized documentation and communication of clinical information can be achieved. This linkage enhances interoperability by enabling seamless exchange of structured clinical data, supporting accurate clinical decision-making, and promoting continuity of care for patients across various healthcare settings.
 
 Together, FHIR and SNOMED CT facilitate a unified approach to healthcare information management, benefiting both vendors, healthcare providers and patients.
+
+
+
+
+
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScTmbZIf0UEQwYDkY27EEWBkaiYkHSbR0_9DmFrMLXoQLyL7Q/viewform?usp=pp_url&entry.1767247133=NCPT IG&entry.670899847=HL7%20FHIR%20and%20NCPT" class="button primary">Provide Feedback</a>

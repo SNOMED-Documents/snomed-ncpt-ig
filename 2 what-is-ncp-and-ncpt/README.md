@@ -63,3 +63,10 @@ In summary, the NCP Model and NCPT represent foundational tools for guiding prof
 6. Lloyd L, Swan WI, Jent S, Vivanti A, Pertel DG. Worldwide Release of SNOMED CT Nutrition Care Process Terminology Problem List. J Acad Nutr Diet. 2024 Apr;124:531-4.
 7. Maduri C, Hsueh PYS, Li Z, Chen CH, Papoutsakis C. Applying contemporary machine learning approaches to nutrition care real-world evidence: findings from the National Quality Improvement Data Set. J Acad Nutr Diet. 2021;121(12): 2549-2559.e1. doi: 10.1016/j.jand.2021.02.003
 </code></pre>
+
+
+
+
+
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScTmbZIf0UEQwYDkY27EEWBkaiYkHSbR0_9DmFrMLXoQLyL7Q/viewform?usp=pp_url&entry.1767247133=NCPT IG&entry.670899847=What%20is%20NCP%20and%20NCPT%3F" class="button primary">Provide Feedback</a>

@@ -9,3 +9,10 @@ By establishing these models and bindings, healthcare organizations can achieve 
 In recent years, the integration of HL7® FHIR® with SNOMED CT has gained popularity. Given its wide acceptance and capabilities, HL7 FHIR is the preferred information model in this implementation guide. The following sections provide recommended strategies for integrating SNOMED CT with HL7 FHIR to document the NCP within electronic health records (EHRs).
 
 Other information modeling solutions, such as openEHR, may provide useful archetypes. However, they are not included in this version of the guide due to the lack of widely recognized international models in this area. As progress continues, future updates to the guide may include these frameworks.
+
+
+
+
+
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScTmbZIf0UEQwYDkY27EEWBkaiYkHSbR0_9DmFrMLXoQLyL7Q/viewform?usp=pp_url&entry.1767247133=NCPT IG&entry.670899847=Information%20Models%20and%20Terminology%20Binding" class="button primary">Provide Feedback</a>

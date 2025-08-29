@@ -125,3 +125,10 @@ Lloyd L, Swan WI, Jent S, Vivanti A, Pertel DG. Worldwide Release of SNOMED CT N
 Swan WI, Vivanti A, Hakel-Smith NA, Hotson B, Orrevall Y, Trostler N, Beck Howarter K, Papoutsakis C. Nutrition Care Process and Model Update: Toward Realizing People-Centered Care and Outcomes Management. J Acad Nutr Diet. 2017 Dec;117:2003-14.
 
 Swan WI, Pertel DG, Hotson B, Lloyd L, Orrevall Y, Trostler N, Vivanti A, Howarter KB, Papoutsakis C. Nutrition Care Process (NCP) Update Part 2: Developing and Using the NCP Terminology to Demonstrate Efficacy of Nutrition Care and Related Outcomes. J Acad Nutr Diet. 2019 May;119:840-55.
+
+
+
+
+
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScTmbZIf0UEQwYDkY27EEWBkaiYkHSbR0_9DmFrMLXoQLyL7Q/viewform?usp=pp_url&entry.1767247133=NCPT IG&entry.670899847=Introduction" class="button primary">Provide Feedback</a>
