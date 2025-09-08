@@ -15,4 +15,4 @@ Other information modeling solutions, such as openEHR, may provide useful archet
 
 
 
-<a href="https://docs.google.com/forms/d/e/1FAIpQLScTmbZIf0UEQwYDkY27EEWBkaiYkHSbR0_9DmFrMLXoQLyL7Q/viewform?usp=pp_url&entry.1767247133=NCPT IG&entry.670899847=Information%20Models%20and%20Terminology%20Binding" class="button primary">Provide Feedback</a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScTmbZIf0UEQwYDkY27EEWBkaiYkHSbR0_9DmFrMLXoQLyL7Q/viewform?usp=pp_url&entry.1767247133=NCPT+IG&entry.670899847=Information%20Models%20and%20Terminology%20Binding" class="button primary">Provide Feedback</a>
