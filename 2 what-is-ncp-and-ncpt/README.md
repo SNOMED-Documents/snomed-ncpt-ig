@@ -25,7 +25,7 @@ The output of the NCPM is emphasizing the importance of studying the the NCP its
 
 External and professional factors are depicted in the **two outer rings** to reflect practice settings, health care systems, social systems, and economic environment. The **middle ring** includes variables that influence quality of practice and include: dietetics knowledge, skills and competencies, critical thinking, collaboration, communication and documentation, evidence-based practice, and code of ethics. The **center circle (core)** features the person/population that interacts with the nutrition and dietetics professional and as such the core of the NCPM symbolizes people-centered nutrition care delivery.
 
-<figure><img src="../images/259855704.png" alt=""><figcaption><p>Reprinted from J Acad Nutr Diet. 2017 Dec, Swan WI, Vivanti A, Hakel-Smith NA, Hotson B, Orrevall Y, Trostler N, Beck Howarter K, Papoutsakis C., Nutrition Care Process and Model Update: Toward Realizing People-Centered Care and Outcomes Management, Pages 2003-14, Copyright 2017, with permission from Elsevier.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/259855704.png" alt=""><figcaption><p>Reprinted from J Acad Nutr Diet. 2017 Dec, Swan WI, Vivanti A, Hakel-Smith NA, Hotson B, Orrevall Y, Trostler N, Beck Howarter K, Papoutsakis C., Nutrition Care Process and Model Update: Toward Realizing People-Centered Care and Outcomes Management, Pages 2003-14, Copyright 2017, with permission from Elsevier.</p></figcaption></figure>
 
 \*This is an updated definition because V2 standards site alteration in nutrition status and point to LOINC 75305-3 Nutritional status with synonym nutrition diagnosis.
 
@@ -51,8 +51,6 @@ For systems who use NCPT as an interface terminology and pursuing to enable SNOM
 
 In summary, the NCP Model and NCPT represent foundational tools for guiding professionals in delivering evidence-based, personalized nutrition and dietetics care. By adopting tools like these, healthcare organizations can enhance the quality, consistency, and effectiveness of nutrition and dietetics care delivery, ultimately promoting better health outcomes for individuals and communities alike. Wide adoption also facilitates communication, data exchange and aggregation among health delivery systems, making the accumulation of big data and advanced analyses possible.
 
-
-
 ## **References**
 
 <pre data-overflow="wrap"><code><strong>1. Swan WI, Vivanti A, Hakel-Smith NA, Hotson B, Orrevall Y, Trostler N, Beck Howarter K, Papoutsakis C. Nutrition Care Process and Model Update: Toward Realizing People-Centered Care and Outcomes Management. J Acad Nutr Diet. 2017 Dec;117:2003-14.
@@ -64,9 +62,4 @@ In summary, the NCP Model and NCPT represent foundational tools for guiding prof
 7. Maduri C, Hsueh PYS, Li Z, Chen CH, Papoutsakis C. Applying contemporary machine learning approaches to nutrition care real-world evidence: findings from the National Quality Improvement Data Set. J Acad Nutr Diet. 2021;121(12): 2549-2559.e1. doi: 10.1016/j.jand.2021.02.003
 </code></pre>
 
-
-
-
-
-
-<a href="https://docs.google.com/forms/d/e/1FAIpQLScTmbZIf0UEQwYDkY27EEWBkaiYkHSbR0_9DmFrMLXoQLyL7Q/viewform?usp=pp_url&entry.1767247133=NCPT+IG&entry.670899847=What%20is%20NCP%20and%20NCPT%3F" class="button primary">Provide Feedback</a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScTmbZIf0UEQwYDkY27EEWBkaiYkHSbR0_9DmFrMLXoQLyL7Q/viewform?usp=pp_url&#x26;entry.1767247133=NCPT+IG&#x26;entry.670899847=What%20is%20NCP%20and%20NCPT%3F" class="button primary">Provide Feedback</a>

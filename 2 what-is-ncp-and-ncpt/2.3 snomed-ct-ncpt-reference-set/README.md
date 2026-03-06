@@ -1,4 +1,4 @@
-# 2.3 SNOMED CT NCPT Reference Set
+# SNOMED CT NCPT Reference Set
 
 The SNOMED CT Nutrition Care Process Terminology (NCPT) Reference Set is a product agreed as part of a collaboration agreement between the Academy of Nutrition and Dietetics and the International Health Terminology Standards Organisation (IHTSDO), trading as SNOMED International. NCPT content has been incorporated into SNOMED CT and released as a reference set by SNOMED International. This production release is based on NCPT, 2020 edition. The current NCPT, 2023 edition, is available at [www.nutritioncareprocess.org](http://www.nutritioncareprocess.org) (log in required). The spreadsheet of NCPT, 2020 edition is available to organizations upon request ([www.nutritioncareprocess.org](http://www.nutritioncareprocess.org) (organization level log in required).
 
@@ -21,8 +21,15 @@ Concepts follow the SNOMED naming conventions and the NCPT terms are often inclu
 
 The following pages provide instructions for exploring the members of the NCPT Reference set.
 
-* [2.3.1 Explore all Members of the SNOMED CT NCPT Reference Set](https://github.com/IHTSDO/snomed-ncpt-ig/blob/main/2%20what-is-ncp-and-ncpt/2.3%20snomed-ct-ncpt-reference-set/2.3.1-Explore-all-Members-of-the-SNOMED-CT-NCPT-Reference-Set_259855701.html)
-* [2.3.2 Check if a concept is part of the SNOMED CT NCPT Reference Set](https://github.com/IHTSDO/snomed-ncpt-ig/blob/main/2%20what-is-ncp-and-ncpt/2.3%20snomed-ct-ncpt-reference-set/2.3.2-Check-if-a-concept-is-part-of-the-SNOMED-CT-NCPT-Reference-Set_259855702.html)
+{% content-ref url="2.3.1-explore-all-members-of-the-snomed-ct-ncpt-reference-set.md" %}
+[2.3.1-explore-all-members-of-the-snomed-ct-ncpt-reference-set.md](2.3.1-explore-all-members-of-the-snomed-ct-ncpt-reference-set.md)
+{% endcontent-ref %}
+
+{% content-ref url="2.3.2-check-if-a-concept-is-part-of-the-snomed-ct-ncpt-reference-set.md" %}
+[2.3.2-check-if-a-concept-is-part-of-the-snomed-ct-ncpt-reference-set.md](2.3.2-check-if-a-concept-is-part-of-the-snomed-ct-ncpt-reference-set.md)
+{% endcontent-ref %}
+
+
 
 **References**
 
@@ -43,9 +50,4 @@ Middeke J, Palmer K, Lövestam E, et al. Predictors of nutrition care process kn
 \*\*\
 \*\*
 
-
-
-
-
-
-<a href="https://docs.google.com/forms/d/e/1FAIpQLScTmbZIf0UEQwYDkY27EEWBkaiYkHSbR0_9DmFrMLXoQLyL7Q/viewform?usp=pp_url&entry.1767247133=NCPT+IG&entry.670899847=2.3%20SNOMED%20CT%20NCPT%20Reference%20Set" class="button primary">Provide Feedback</a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScTmbZIf0UEQwYDkY27EEWBkaiYkHSbR0_9DmFrMLXoQLyL7Q/viewform?usp=pp_url&#x26;entry.1767247133=NCPT+IG&#x26;entry.670899847=2.3%20SNOMED%20CT%20NCPT%20Reference%20Set" class="button primary">Provide Feedback</a>
