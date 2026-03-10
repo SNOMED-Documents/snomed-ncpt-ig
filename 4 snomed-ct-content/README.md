@@ -1,4 +1,4 @@
-# 4. SNOMED CT Content
+# SNOMED CT Content
 
 ## History
 
@@ -28,14 +28,22 @@ It is important to note that there is no single, unified hierarchy dedicated sol
 
 To aid understanding and interpretation, each page of this chapter will introduce relevant content, along with explanations of its modeling approach, attributes, and examples. This layout is designed to help readers navigate and utilize SNOMED CT content for NCPT effectively, with practical examples that demonstrate the structure and utility of each concept within clinical documentation and workflows.
 
-* [4.1 Nutrition Assessment and Reassessment](https://github.com/IHTSDO/snomed-ncpt-ig/blob/main/4%20snomed-ct-content/4.1-Nutrition-Assessment-and-Reassessment_259855691.html)
-* [4.2 Nutrition Diagnosis](https://github.com/IHTSDO/snomed-ncpt-ig/blob/main/4%20snomed-ct-content/4.2-Nutrition-Diagnosis_259855679.html)
-* [4.3 Nutrition Interventions](https://github.com/IHTSDO/snomed-ncpt-ig/blob/main/4%20snomed-ct-content/4.3-Nutrition-Interventions_259855686.html)
-* [4.4 Nutrition Monitoring and Evaluation](https://github.com/IHTSDO/snomed-ncpt-ig/blob/main/4%20snomed-ct-content/4.4-Nutrition-Monitoring-and-Evaluation_259855695.html)
+{% content-ref url="4.1-nutrition-assessment-and-reassessment.md" %}
+[4.1-nutrition-assessment-and-reassessment.md](4.1-nutrition-assessment-and-reassessment.md)
+{% endcontent-ref %}
+
+{% content-ref url="4.2-nutrition-diagnosis.md" %}
+[4.2-nutrition-diagnosis.md](4.2-nutrition-diagnosis.md)
+{% endcontent-ref %}
+
+{% content-ref url="4.3-nutrition-interventions.md" %}
+[4.3-nutrition-interventions.md](4.3-nutrition-interventions.md)
+{% endcontent-ref %}
+
+{% content-ref url="4.4-nutrition-monitoring-and-evaluation.md" %}
+[4.4-nutrition-monitoring-and-evaluation.md](4.4-nutrition-monitoring-and-evaluation.md)
+{% endcontent-ref %}
 
 
 
-
-
-
-<a href="https://docs.google.com/forms/d/e/1FAIpQLScTmbZIf0UEQwYDkY27EEWBkaiYkHSbR0_9DmFrMLXoQLyL7Q/viewform?usp=pp_url&entry.1767247133=NCPT+IG&entry.670899847=4.%20SNOMED%20CT%20Content" class="button primary">Provide Feedback</a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScTmbZIf0UEQwYDkY27EEWBkaiYkHSbR0_9DmFrMLXoQLyL7Q/viewform?usp=pp_url&#x26;entry.1767247133=NCPT+IG&#x26;entry.670899847=4.%20SNOMED%20CT%20Content" class="button primary">Provide Feedback</a>
