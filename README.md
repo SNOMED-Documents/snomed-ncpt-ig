@@ -8,7 +8,7 @@ The SNOMED CT Implementation Guide for Nutrition Care Process Terminology (NCPT)
 
 ***
 
-_Please click the button to get a pdf version of the September 2025 version of this Implementation Guide._&#x20;
+_Please click the button to get a pdf version of the April 2026 version of this Implementation Guide._&#x20;
 
 <p align="right"><a href="https://github.com/SNOMED-Documents/snomed-ncpt-ig/releases/download/2025-09-26/doc_NCPTImplementationGuide_Current-en-US_INT_20250926.pdf" class="button primary">Get PDF</a></p>
 
