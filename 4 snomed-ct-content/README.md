@@ -6,8 +6,6 @@ To facilitate the development of nutrition-related content in SNOMED CT, the **N
 
 The responsibility for maintaining nutrition and dietetics content within SNOMED CT has since, transitioned to the **Nutrition and Dietetics Clinical Resource Group (CRG)**. This group is now tasked with overseeing the management of nutrition-related concepts, maintaining the SNOMED CT NCPT reference set, and leading quality improvement projects in collaboration with SNOMED International. The Academy of Nutrition and Dietetics continues to provide stewardship through dedicating staff support.&#x20;
 
-<br>
-
 ## Benefits of SNOMED CT
 
 When clinical concepts are modeled using a set of rules (these rules are explained in the [SNOMED CT Editorial Guide](https://app.gitbook.com/o/h8Z6qGxuQrzM9vbx5bPT/s/uoSxuN6wQMDYcvuq2wNX/)), this allows for consistent representation of clinical information in electronic health records (EHRs). Thus, good modeling enhances the quality of the data. Also, modeling of concepts offers the necessary infrastructure to carry out data analytics, collapse, or parse different sets of data. This means that data can be analyzed with different levels of granularity, across different settings, and reused by many for different objectives. (for more information on data analysis with SNOMED CT, please refer to: [Data Analytics with SNOMED CT](http://snomed.org/analytics) and [Data Analytics Tooling](https://www.implementation.snomed.org/data-analytics-tools))
