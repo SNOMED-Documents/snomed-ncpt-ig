@@ -1,8 +1,6 @@
-# Appendix D: Change List
+# Appendix D: Exception List
 
 ### Purpose
-
-<br>
 
 This appendix documents all SNOMED CT concept additions, remaps, semantic tag updates, international extension substitutions, and omissions that differ from the 2020 NCPT baseline release.
 
@@ -42,8 +40,10 @@ Different from the 2020 version of NCPT and included in the 2026 NCPT Refset Rel
 {% endtab %}
 
 {% tab title="Omissions" %}
-<table><thead><tr><th width="172">SNOMED ID (2020)</th><th width="224">SNOMED FSN (2020)</th><th width="167">SNOMED ID (2023)</th><th width="207">SNOMED FSN (2023)</th><th width="76">NCPT Domain</th><th width="216">Reason</th></tr></thead><tbody><tr><td> </td><td> </td><td>284778005</td><td>Difficulty performing personal care activity (finding)</td><td>D</td><td>Omitted d/t ncpt inactivation</td></tr><tr><td>439081000124109</td><td>Dietary liquid consistency - thin liquid (regime/therapy)</td><td> </td><td> </td><td>I</td><td>Omitted d/t ncpt inactivation</td></tr><tr><td>439021000124105</td><td>Dietary liquid consistency - nectar thick liquid (regime/therapy)</td><td> </td><td> </td><td>I</td><td>Omitted d/t ncpt inactivation</td></tr><tr><td>439031000000000</td><td>Dietary liquid consistency - honey thick liquid (regime/therapy)</td><td> </td><td> </td><td>I</td><td>Omitted d/t ncpt inactivation</td></tr><tr><td>439041000000000</td><td>Dietary liquid consistency - spoon thick liquid (regime/therapy)</td><td> </td><td> </td><td>I</td><td>Omitted d/t ncpt inactivation</td></tr><tr><td>447316007</td><td>Mini-mental state examination score (observable entity)</td><td> </td><td> </td><td>AME</td><td>Omitted d/t NCPT inactivation</td></tr><tr><td>439141000124104</td><td>Commercial beverage, medical food supplement therapy (regime/therapy)</td><td>439131000124109</td><td>Medical food supplement therapy (regime/therapy)</td><td>I</td><td>Remapped to duplicate mapping</td></tr><tr><td>439151000124102</td><td>Commercial food, medical food supplement therapy (regime/therapy)</td><td>439131000124109</td><td>Medical food supplement therapy (regime/therapy)</td><td>I</td><td>Remapped to duplicate mapping</td></tr></tbody></table>
+Concepts inactivated in the NCPT Reference Set either due to changes to NCPT or SNOMED CT version changes.
 
-
+<table><thead><tr><th width="172">SNOMED ID (2020)</th><th width="224">SNOMED FSN (2020)</th><th width="167">SNOMED ID (2023)</th><th width="207">SNOMED FSN (2023)</th><th width="76">NCPT Domain</th><th width="216">Reason</th></tr></thead><tbody><tr><td> </td><td> </td><td>284778005</td><td>Difficulty performing personal care activity (finding)</td><td>D</td><td>Omitted due to ncpt inactivation</td></tr><tr><td>439081000124109</td><td>Dietary liquid consistency - thin liquid (regime/therapy)</td><td> </td><td> </td><td>I</td><td>Omitted due to ncpt inactivation</td></tr><tr><td>439021000124105</td><td>Dietary liquid consistency - nectar thick liquid (regime/therapy)</td><td> </td><td> </td><td>I</td><td>Omitted due to ncpt inactivation</td></tr><tr><td>439031000000000</td><td>Dietary liquid consistency - honey thick liquid (regime/therapy)</td><td> </td><td> </td><td>I</td><td>Omitted due to ncpt inactivation</td></tr><tr><td>439041000000000</td><td>Dietary liquid consistency - spoon thick liquid (regime/therapy)</td><td> </td><td> </td><td>I</td><td>Omitted due to ncpt inactivation</td></tr><tr><td>447316007</td><td>Mini-mental state examination score (observable entity)</td><td> </td><td> </td><td>AME</td><td>Omitted due to NCPT inactivation</td></tr><tr><td>439141000124104</td><td>Commercial beverage, medical food supplement therapy (regime/therapy)</td><td>439131000124109</td><td>Medical food supplement therapy (regime/therapy)</td><td>I</td><td>Remapped to duplicate mapping</td></tr><tr><td>439151000124102</td><td>Commercial food, medical food supplement therapy (regime/therapy)</td><td>439131000124109</td><td>Medical food supplement therapy (regime/therapy)</td><td>I</td><td>Remapped to duplicate mapping</td></tr></tbody></table>
 {% endtab %}
 {% endtabs %}
+
+{% file src="../.gitbook/assets/2026NCPTRefSet_Appendix D.xlsx" %}

@@ -33,4 +33,4 @@
   * [Appendix A: How to Learn More](appendices/appendix-a-how-to-learn-more.md)
   * [Appendix B: Glossary of Terms](appendices/appendix-b-glossary-of-terms.md)
   * [Appendix C: International Standards and Resources](appendices/appendix-c-international-standards-and-resources.md)
-  * [Appendix D: Change List](appendices/appendix-d-change-list.md)
+  * [Appendix D: Exception List](appendices/appendix-d-exception-list.md)

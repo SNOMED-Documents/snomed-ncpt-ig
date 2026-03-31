@@ -16,7 +16,7 @@ The April 2025 release expanded the refset with the addition of nutrition interv
 
 The most recent release (April 2026) contains 1115 concepts, mostly in the nutrition assessment and monitoring and evaluation domain. Of these, 497 reflect additions or re-mappings introduced in the 2023 NCPT publication. This release also includes 1 additional intervention concept and 2 additional diagnosis concept.
 
-The April 2025 refset (intervention and diagnosis concepts) reflect additional 2023 NCPT updated content: 139 intervention concepts and 24 diagnosis concepts were added from the 2023 publication. More information about specific concepts can be found in [appendix-d-change-list.md](../../appendices/appendix-d-change-list.md "mention").
+The April 2025 refset (intervention and diagnosis concepts) reflect additional 2023 NCPT updated content: 139 intervention concepts and 24 diagnosis concepts were added from the 2023 publication. More information about specific concepts can be found in [appendix-d-exception-list.md](../../appendices/appendix-d-exception-list.md "mention").
 
 The gradual updating of the SNOMED CT NCPT reference set that prioritized nutrition problems aligns with data from the International NCP Implementation Survey (INIS). INIS is a research consortium of 23 countries across the globe (led by Sweden) tracking the implementation of the NCP and NCPT. Specifically, INIS data showed that countries implement the documentation of nutrition problems first. Further information on the background, motivation and design of the reference set is available in the release notes of the SNOMED CT NCPT Reference Set. See available links below:
 
