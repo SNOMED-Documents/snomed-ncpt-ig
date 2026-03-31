@@ -1,6 +1,4 @@
-# 3. clinical-use-cases
-
-
+# Use Cases
 
 Effective nutrition care relies on the ability to share, receive, reuse, and interpret structured nutrition data seamlessly across healthcare settings. Structured nutrition data play a crucial role in supporting comprehensive care transitions, ensuring continuity and consistency in nutrition interventions as patients move through different levels of care.
 
@@ -8,7 +6,7 @@ The use cases provided on this page serve as examples of how SNOMED CT terms can
 
 ## Use Case 1: Interoperable nutrition care utilizing the Nutrition Care Process Model and standardized terminology
 
-Standardizing the documentation of nutrition care using SNOMED CT allows for consistent recording of patient data across different EHR systems . Structured documentation facilitates interoperability between healthcare providers and enables seamless sharing of nutrition-related data during patient transitions between care settings (e.g. when a patient is discharged from a hospital to a long term care facility). Development of functional digital nutrition care templates in EHR systems, and subsequent seamless data acquisition and analysis are greatly facilitated by the SNOMED CT NCPT reference set and other available concept groupings such as value sets. [Value sets](https://confluence.ihtsdotools.org/display/DOCGLOSS/value+set) are lists of codes and corresponding terms, such as SNOMED CT that define clinical concepts to support effective and interoperable health information exchange. Value sets ensure consistency as the same key concepts are chosen every time for documentation. In the United States, the [Value Set Authority](https://vsac.nlm.nih.gov/) of the National Library of Medicine maintains value sets. The Academy stewards over 78 nutrition and dietetics related value sets that are available at the [Value Set Authority](https://vsac.nlm.nih.gov/) (log in required). An example of such a value set is the '[Nutrition Diagnosis Grouping](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1095.85/expansion)' value set in VSAC that contains mostly but not exclusively the SNOMED concepts describing NCPT nutrition diagnoses. In future iterations of this guide, broad examples utilizing value sets will be included among use cases. More on value sets is available in section [5.4.2.1 Terminology Bindings for Nutrition Diagnosis](https://github.com/IHTSDO/snomed-ncpt-ig/blob/main/3%20clinical-use-cases/5.4.2.1-Terminology-Bindings-for-Nutrition-Diagnosis_259855732.html).
+Standardizing the documentation of nutrition care using SNOMED CT allows for consistent recording of patient data across different EHR systems. Structured documentation facilitates interoperability between healthcare providers and enables seamless sharing of nutrition-related data during patient transitions between care settings (e.g. when a patient is discharged from a hospital to a long term care facility). Development of functional digital nutrition care templates in EHR systems, and subsequent seamless data acquisition and analysis are greatly facilitated by the SNOMED CT NCPT reference set and other available concept groupings such as value sets. [Value sets](https://app.gitbook.com/s/P21QucCX9Y41nBQt50ad/v/value-set) are lists of codes and corresponding terms, such as SNOMED CT that define clinical concepts to support effective and interoperable health information exchange. Value sets ensure consistency as the same key concepts are chosen every time for documentation. In the United States, the [Value Set Authority](https://vsac.nlm.nih.gov/) of the National Library of Medicine maintains value sets. The Academy stewards over 72 nutrition and dietetics related value sets that are available at the [Value Set Authority](https://vsac.nlm.nih.gov/) (log in required). An example of such a value set is the '[Nutrition Diagnosis Grouping](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1095.85/expansion)' value set in VSAC that contains mostly but not exclusively the SNOMED concepts describing NCPT nutrition diagnoses. In future iterations of this guide, broad examples utilizing value sets will be included among use cases. More on value sets is available in section [5.4.2.1 Terminology Bindings for Nutrition Diagnosis](https://github.com/IHTSDO/snomed-ncpt-ig/blob/main/3%20clinical-use-cases/5.4.2.1-Terminology-Bindings-for-Nutrition-Diagnosis_259855732.html).
 
 ### Example 1.1 - Nutrition **Assessment**
 
@@ -50,19 +48,19 @@ Best practice tip: There is discussion in many countries like Sweden about minim
 
 ### Example 1.2 - Evidence-Based Nutrition **Diagnosis**
 
-> By leveraging SNOMED CT concepts for nutrition diagnosis within the **SNOMED CT NCPT reference set (current release April 2025)** , healthcare professionals can accurately identify and categorize patients' nutrition problems. This standardized approach enhances the ability to apply evidence-based interventions and track outcomes effectively.
+> By leveraging SNOMED CT concepts for nutrition diagnosis within the **SNOMED CT NCPT reference set (current release April 2026)** , healthcare professionals can accurately identify and categorize patients' nutrition problems. This standardized approach enhances the ability to apply evidence-based interventions and track outcomes effectively.
 
 **Example of a complete diagnostic statement in PES format (P: problem, E: etiology, S: signs and symptoms)**
 
-* _**P**_**&#x20;roblem**: 870404000 Excessive intake of carbohydrate (finding), related to
-* \*\* _E_ tiology\*\*: 424890008 Unbalanced diet (finding), as evidenced by
-* \*\* _S_ igns and Symptoms\*\*:
+* **Problem**: 870404000 Excessive intake of carbohydrate (finding), related to
+* **Etiology**: 424890008 Unbalanced diet (finding), as evidenced by
+* **Signs and Symptoms**:
   * 788472008 Carbohydrate intake (observable entity): > 500 grams per day exceeding recommended range of 250-300 grams per day and
   * 785891000 Nutrition knowledge of individual client (observable entity): poor
   * 819960006 Healthy Eating Index 2015 score (observable entity): 49 (out of 100): poor
   * 405152002 Quality of life satisfaction (observable entity): poor as reported by patient's Health Related Quality of Life (HRQOL)
 
-By applying standardized terminology, the healthcare team can accurately identify the patient's nutrition-related problems and prioritize interventions to address the patients' specific needs.
+By applying standardized terminology, the healthcare team can accurately identify the patient's nutrition-related problems and prioritize interventions to address the patient's specific needs.
 
 #### Benefits for Clinicians:
 
@@ -80,8 +78,6 @@ By applying standardized terminology, the healthcare team can accurately identif
 >
 > The dietitian provides an intervention that supports carbohydrate control and portion sizes. The use of SNOMED CT ensures consistency in documenting dietary recommendations and facilitates communication between the dietitian, nurse, endocrinologist, and other members of the healthcare team involved in the patient's care.
 
-
-
 **Examples**
 
 * 445301000124102 Content-related nutrition education (procedure), on
@@ -89,22 +85,22 @@ By applying standardized terminology, the healthcare team can accurately identif
 
 #### Benefits for Clinicians:
 
-* \*\*Personalized Care Planning: \*\*Standardized documentation of nutrition interventions supports clinicians in developing personalized care plans that align with patients' nutrition diagnoses, preferences, and cultural backgrounds.
+* **Personalized Care Planning:** Standardized documentation of nutrition interventions supports clinicians in developing personalized care plans that align with patients' nutrition diagnoses, preferences, and cultural backgrounds.
 * **Consistency in Treatment:** Clinicians can consistently implement evidence-based nutrition interventions using SNOMED CT-coded concepts, promoting standardization and quality of care across diverse patient populations and care settings.
-* \*\*Enhanced Patient Engagement: \*\*Clear and standardized documentation facilitates effective communication between clinicians and patients, empowering patients to actively participate in their nutrition management and adhere to recommended dietary changes.
+* **Enhanced Patient Engagement:** Clear and standardized documentation facilitates effective communication between clinicians and patients, empowering patients to actively participate in their nutrition management and adhere to recommended dietary changes.
 
 #### Benefits for Patients:
 
-* \*\*Personalized Care Planning: \*\*Standardized documentation of nutrition interventions supports clinicians in developing personalized care plans that align with patients' nutrition diagnoses, preferences, and cultural backgrounds.
-* \*\*Enhanced Patient Engagement: \*\*Clear and standardized documentation facilitates effective communication between clinicians and patients, empowering patients to actively participate in their nutrition management and adhere to recommended dietary changes.
+* **Personalized Care Planning:** Standardized documentation of nutrition interventions supports clinicians in developing personalized care plans that align with patients' nutrition diagnoses, preferences, and cultural backgrounds.
+* **Enhanced Patient Engagement:** Clear and standardized documentation facilitates effective communication between clinicians and patients, empowering patients to actively participate in their nutrition management and adhere to recommended dietary changes.
 
 ### Example 1.4 - Continuous Nutrition **Monitoring and Evaluation**
 
-> Standardized documentation of nutrition monitoring and evaluation data using SNOMED CT facilitates ongoing assessment of patients' nutritional status and progress over time. This enables healthcare professionals to identify trends, adjust interventions as needed, and evaluate the effectiveness of nutrition care plans in achieving desired outcomes.
+> Standardized documentation of nutrition monitoring and evaluation data using SNOMED CT facilitates ongoing assessment of patients' nutritional status and progress over time. This enables nutrition and dietetics professionals to identify trends, adjust interventions as needed, and evaluate the effectiveness of nutrition care plans in achieving desired outcomes.
 
 **Examples**
 
-* 788472008 Carbohydrate intake (observable entity): \*\*>\*\***500 grams per day** exceeding recommended range of 250-300 grams per day
+* 788472008 Carbohydrate intake (observable entity): **>500 grams per day** exceeding recommended range of 250-300 grams per day
 * 785891000 Nutrition knowledge of individual client (observable entity): **poor**
 * 819960006 Healthy Eating Index 2015 score (observable entity): **49 (out of 100): poor**
 * 405152002 Quality of life satisfaction (observable entity): **poor** as reported by patient's Health Related Quality of Life (HRQOL)
@@ -122,7 +118,7 @@ By applying standardized terminology, the healthcare team can accurately identif
 
 ## Use Case 2: Transitions of care include continuity of nutrition care across settings. How does the information follow the patient
 
-Transitional care models are practice systems that “follow patients across settings (e.g., from hospital to home), improve coordination among health care providers, and help individuals better understand their post-hospital care. When implementing SNOMED CT for nutrition care documentation, concurrent effective use of data standards (such as Health Level 7 FHIR) allows for data to follow the patient effectively. Standardized documentation of nutrition care using SNOMED CT is a critical pre-step to the use of data standards such as FHIR as the structured data is more readily exchanged.
+Transitional care models are practice systems that “follow patients across settings (e.g., from hospital to home), improve coordination among health care providers, and help individuals better understand their post-hospital care. When implementing SNOMED CT for nutrition care documentation, concurrent effective use of data standards (such as HL7 FHIR) allows for data to follow the patient effectively. Standardized documentation of nutrition care using SNOMED CT is a critical pre-step to the use of data standards such as FHIR as the structured data is more readily exchanged.
 
 ### Example 2.1 - Exchanging Nutrition Data
 
@@ -132,7 +128,6 @@ Transitional care models are practice systems that “follow patients across set
 
 * **Real Time Data Transfer** : Ensures timely continuity of care and reduces clinician and patient burden (no more repeating of information).
 * **Reduced Opportunity for Human Error in Clinical Documentation** : Automated data transfer allows for accurate data transmission from hospital to other venues of care.
-* **Enhanced Security and Privacy:** While FHIR is not a security protocol in itself, using data standards to exchange documentation requires advanced security measures that better protect patient privacy.
 
 #### Benefits for Patients:
 
@@ -145,17 +140,17 @@ By implementing SNOMED CT for nutrition care documentation, EHR systems can supp
 
 ### Example 3.1 - EHR-Integrated Tool for Personalized Care and Research Insights
 
-> A healthcare system implements a clinical decision support tool embedded within its EHR system to assist providers in managing patients with chronic kidney disease. The tool utilizes SNOMED CT-coded nutrition data to generate tailored recommendations for dietary modifications, fluid restriction, and electrolyte management based on the patient's stage of disease and comorbid conditions. Additionally, aggregated SNOMED CT-coded nutrition data from EHRs across the healthcare system are utilized for research purposes to analyze trends in nutrition-related outcomes among patients with chronic kidney disease and evaluate the impact of various interventions on disease progression and quality of life.
+> A healthcare system implements a clinical decision support tool embedded within its EHR system to assist providers in managing patients with chronic kidney disease. The tool utilizes SNOMED CT-coded nutrition data to generate tailored recommendations for dietary modifications, fluid restriction, and electrolyte management based on the patient's stage of disease and comorbid conditions. Additionally, aggregated SNOMED CT-coded nutrition care data from EHRs across the healthcare system are utilized for research purposes to analyze trends in nutrition-related outcomes among patients with chronic kidney disease and evaluate the impact of various interventions on disease progression and quality of life.
 
 #### Benefits for Clinicians:
 
-* **Enhanced Decision Support:** Clinicians benefit from clinical decision support tools embedded within the EHR that utilize standardized SNOMED CT-coded nutrition data to provide real-time, evidence-based recommendations for patient care, enhancing clinical decision-making and patient safety.
+* **Enhanced Decision Support:** Clinicians benefit from clinical decision support tools embedded within the EHR that utilize standardized SNOMED CT-coded nutrition care data to provide real-time, evidence-based recommendations for patient care, enhancing clinical decision-making and patient safety.
 * **Informed Research:** Aggregated SNOMED CT-coded nutrition data facilitate research initiatives by providing valuable insights into nutrition care practices, outcomes, and trends across diverse patient populations, supporting evidence-based practice and continuous quality improvement efforts.
-* **Knowledge Translation:** Research findings derived from SNOMED CT-coded nutrition data can be translated into clinical practice guidelines and protocols, equipping clinicians with up-to-date evidence to guide their decision-making and improve patient care.
+* **Knowledge Translation:** Research findings derived from SNOMED CT-coded nutrition care data can be translated into clinical practice guidelines and protocols, equipping clinicians with up-to-date evidence to guide their decision-making and improve patient care.
 
 #### Benefits for Patients:
 
-* **Generation of New Evidence:** Aggregated SNOMED CT-coded nutrition data facilitate the updating of evidence-based nutrition practice guidelines and can be used in quality improvement work, advocacy and policy design efforts for advancing nutrition care services and related staffing capacity.
+* **Generation of New Evidence:** Aggregated SNOMED CT-coded nutrition care data facilitate the updating of evidence-based nutrition practice guidelines and can be used in quality improvement work, advocacy and policy design efforts for improving nutrition care services and related staffing capacity.
 
 **Users who would like to submit new use cases they have developed may do so at any time, and will be considered for inclusion. Please submit content, comments, and questions at:** [**info@snomed.org**](mailto:info@snomed.org)
 
@@ -187,9 +182,4 @@ Proaño GV, Papoutsakis C, Lamers-Johnson E, et al. Evaluating the Implementatio
 
 Vergili JM, Proaño GV, Jimenez EY, Moloney L, Papoutsakis C, Steiber A. Academy of Nutrition and Dietetics Commentary on the Phosphorus Recommendation in the KDOQI Clinical Practice Guidelines for Nutrition in CKD: 2020 Update. J Ren Nutr. May 2024;34(3):192-199. doi:10.1053/j.jrn.2023.11.001
 
-
-
-
-
-
-<a href="https://docs.google.com/forms/d/e/1FAIpQLScTmbZIf0UEQwYDkY27EEWBkaiYkHSbR0_9DmFrMLXoQLyL7Q/viewform?usp=pp_url&entry.1767247133=NCPT+IG&entry.670899847=3.%20clinical-use-cases" class="button primary">Provide Feedback</a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScTmbZIf0UEQwYDkY27EEWBkaiYkHSbR0_9DmFrMLXoQLyL7Q/viewform?usp=pp_url&#x26;entry.1767247133=NCPT+IG&#x26;entry.670899847=3.%20clinical-use-cases" class="button primary">Provide Feedback</a>

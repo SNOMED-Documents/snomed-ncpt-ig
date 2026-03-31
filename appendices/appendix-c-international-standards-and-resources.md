@@ -28,13 +28,8 @@
   * Allergies and intolerances, Height and Weight with BMI, problem list, progress notes, medications, discharge summary. Additional nutrition content (enteral nutrition, MNT) has been proposed.
 * Centers for Medicare and Medicaid (CMS)
 * Electronic Quality Measures (eCQM)
-  * [Global Malnutrition Composite Score](https://ecqi.healthit.gov/ecqm/eh/2024/cms0986v2?qt-tabs_measure=measure-information)
+  * [Global Malnutrition Composite Score](https://ecqi.healthit.gov/ecqm/hosp-inpt/2026/cms0986v5?qt-tabs_measure=measure-information)
     * Screening for malnutrition completed, assessment by dietitian completed in a timely manner, provider diagnosis based on dietitian's and their examination, care plan
     * Supported by a number of VSAC value sets
 
-
-
-
-
-
-<a href="https://docs.google.com/forms/d/e/1FAIpQLScTmbZIf0UEQwYDkY27EEWBkaiYkHSbR0_9DmFrMLXoQLyL7Q/viewform?usp=pp_url&entry.1767247133=NCPT+IG&entry.670899847=Appendix%20C%3A%20International%20Standards%20and%20Resources" class="button primary">Provide Feedback</a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScTmbZIf0UEQwYDkY27EEWBkaiYkHSbR0_9DmFrMLXoQLyL7Q/viewform?usp=pp_url&#x26;entry.1767247133=NCPT+IG&#x26;entry.670899847=Appendix%20C%3A%20International%20Standards%20and%20Resources" class="button primary">Provide Feedback</a>

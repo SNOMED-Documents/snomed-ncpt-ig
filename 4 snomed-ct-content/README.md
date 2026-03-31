@@ -2,9 +2,11 @@
 
 ## History
 
-To facilitate the development of nutrition-related content in SNOMED CT, the **NCPT Clinical Project Group** was established, bringing together nutrition and dietetics professionals across several continents. This group played a pivotal role in reviewing, validating, and authoring content directly into the SNOMED CT International Release with support from SNOMED International authors. The work of the project group, which took place between 2017 and 2023, culminated in the integration of NCPT (Nutrition Care Process Terminology, Edition 2020) into SNOMED CT. With the integration complete, the NCPT Clinical Project Group concluded its efforts.
+To facilitate the development of nutrition-related content in SNOMED CT, the **NCPT Clinical Project Group** was established, bringing together nutrition and dietetics professionals across several continents. This group played a pivotal role in reviewing, validating, and authoring content directly into the SNOMED CT International Release with support from SNOMED International authors. The work of the project group, which took place between 2017 and 2023, concluded with the integration of NCPT (Nutrition Care Process Terminology, Edition 2020) into SNOMED CT.&#x20;
 
-The responsibility for maintaining nutrition and dietetics content within SNOMED CT has since transitioned to the **Nutrition and Dietetics Clinical Resource Group(CRG)**. This group is now tasked with overseeing the management of nutrition-related concepts, maintaining the SNOMED CT NCPT reference set, and leading quality improvement projects in collaboration with SNOMED International. The Academy of Nutrition and Dietetics continues to provide stewardship through dedicated staff support.
+The responsibility for maintaining nutrition and dietetics content within SNOMED CT has since, transitioned to the **Nutrition and Dietetics Clinical Resource Group (CRG)**. This group is now tasked with overseeing the management of nutrition-related concepts, maintaining the SNOMED CT NCPT reference set, and leading quality improvement projects in collaboration with SNOMED International. The Academy of Nutrition and Dietetics continues to provide stewardship through dedicating staff support.&#x20;
+
+<br>
 
 ## Benefits of SNOMED CT
 
